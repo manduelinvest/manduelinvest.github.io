@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  overflow-y: auto;
+  animation: slideshow 18s infinite;
+}
+@keyframes slideshow {
+0% {background-image: url('images/lusaka.jpg');}
+50% {background-image: url('images/cranes.jpg');}
+50.1% {background-image: url('images/building.jpg');}
+100% {background-image: url('images/rubbish.jpg');}
+}
+header {
+  background-color: blue;
+  color: rgb(241, 228, 228);
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+nav {
+  background-color: #555;
+  padding: 10px;
+  text-align: center;
+  position: fixed; 
+  width: 100%;
+  top: 100px;
+  z-index: 999; 
+}
+
+#menu-toggle {
+height: 28px;
+width: 80px;
+border: none;
+cursor: pointer;
+background-color: rgb(5, 33, 83);
+border-radius: 6px;
+font-weight: bold;
+color: antiquewhite;
+font-size: 14px;
+}
+#menu-toggle:hover {
+background-color: rgb(79, 158, 15);
+transition: 400ms;
+box-shadow: 1000%;
+}
+@media only screen and (max-width: 600px) {
+nav a{
+  display: none;
+}
+#menu-toggle {
+  display:block;
+}
+nav.show a {
+  display: block;
+}
+nav.column-layout {
+  flex-direction: column;
+  text-align: right;
+}
+}
+
+@media only screen and (min-width: 601px) {
+#menu-toggle {
+  display: none;
+}
+nav a {
+  display:inline-block;
+}
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover{
+color: darkblue;
+}
+section {
+  padding: 115px 20px 50px;
+  text-align: left;
+}
+/* Styles for the icons */
+.fa-envelope {
+color: rgb(67, 67, 221);
+font-size: 36px;
+}
+
+.fa-whatsapp {
+color: green;
+font-size: 36px;
+}
+
+/* Styles for the text */
+#contact a {
+  color: rgb(13, 13, 14);
+  font-weight: lighter;
+  font-size: 20px;
+}
+#contact a:hover {
+color: darkblue;
+transition: 60ms;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

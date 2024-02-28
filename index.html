@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Manduel Investments Limited</title>
+</head>
+<body>
+    <header>
+        <h1>Manduel Investments Limited</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+        <button id="menu-toggle">Menu</button>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Manduel Investments Limited. We specialize in providing high-quality construction services.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Residential Construction</li>
+            <li>Commercial Construction</li>
+            <li>Renovation & Remodeling</li>
+            <li>Interior Design</li>
+            <li>Cleaning Service</li>
+        </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        You are free to contact us on any of the following.
+      </p>
+      <div>
+        <a href="mailto:mumbwalamachile@gmail.com">
+          <i class="fas fa-envelope"></i> Email: mumbwalamachile@gmail.com
+        </a>
+      </div>
+      <div>
+        <a href="https://wa.me/260971409276">
+          <i class="fab fa-whatsapp"></i> WhatsApp: +260 971-409 276
+        </a>
+      </div>
+      <p>
+        <h1>Vist us</h1>
+        <div>
+          <p>
+            Plot number F/110/142 FLAT# 2, <br>Washama Road Villa Elizabertha,<br>Lusaka,Zambia.
+           
+          </p>
+        </div>
+      </p>
+    </section>
+  
+  
+  
+    <footer id="footer">
+        &copy; <span id="currentYear"></span> Manduel Investments Limited. All rights reserved.
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var menuToggle = document.getElementById("menu-toggle");
+          var nav = document.querySelector("nav");
+
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").innerText = currentYear;
+
+          menuToggle.addEventListener("click", function() {
+              // Toggle class to change display style
+              nav.classList.toggle("show");
+
+              // Toggle class to change flex direction
+              nav.classList.toggle("column-layout");
+          });
+      });
+    </script>
+</body>
+</html>
